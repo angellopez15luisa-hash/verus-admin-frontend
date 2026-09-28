@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* ¡Esta línea es la clave en Tailwind v4 para que funcione tu botón de modo oscuro! */
+@variant dark (&:where(.dark, .dark *));
+
+
