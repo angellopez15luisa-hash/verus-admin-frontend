@@ -34,7 +34,8 @@ const handleImageUpload = (event: Event, handleChange: (value: string) => void) 
     <div class="flex items-center justify-between pb-4 border-b border-slate-100 dark:border-slate-800">
       <h2 class="text-sm font-semibold text-slate-900 dark:text-slate-200 flex items-center gap-2">
         <font-awesome-icon icon="images" class="text-emerald-500" />
-        Listado de Banners / Slides ({{ banners.length }})
+        <!-- Listado de Banners / Slides ({{ banners.length }}) -->
+         Banner
       </h2>
     </div>
 
