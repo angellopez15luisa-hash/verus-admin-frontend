@@ -98,7 +98,14 @@ export class GeneralSettingValue {
   static informationAditionalForm: InformationAditionalForm = {
     text_verify: "",
     text_button_verify: "",
-    iframe_map_contact: ""
+    iframe_map_contact: "",
+    title_seo: "",
+    description_seo: "",
+    keywords_seo: "",
+    ogTitle_title_seo: "",
+    ogDescription_seo: "",
+    twitterCard_seo: "",
+    image: ""
   }
 
   static contentFrequentlyQuestionForm: ContentFrequentlyQuestionForm = {
