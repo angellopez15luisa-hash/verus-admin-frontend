@@ -558,11 +558,11 @@ const handleQuestionUpdated = (
 
       <!-- Formulario / Campos -->
       <form @submit.prevent="onSubmit">
-        <div class="p-6 space-y-2 overflow-y-auto flex-1">
+        <div class="p-6 space-y-1 overflow-y-auto flex-1">
           <!-- PESTAÑA 1: INFORMACIÓN PRINCIPAL -->
           <div v-show="activeTab === 'main'" class="space-y-4">
             <div class="grid grid-cols-1 lg:grid-cols-[3fr_5fr] gap-4">
-              <div class="space-y-1.5">
+              <div class="space-y-1">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300"
                   >Título</label
                 >
@@ -578,7 +578,7 @@ const handleQuestionUpdated = (
                 </span>
               </div>
 
-              <div class="space-y-1.5">
+              <div class="space-y-1">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300"
                   >Texto corto</label
                 >
@@ -601,7 +601,7 @@ const handleQuestionUpdated = (
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-4 items-start">
-              <div class="space-y-1.5 h-full flex flex-col">
+              <div class="space-y-1 h-full flex flex-col">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300"
                   >Descripción corta</label
                 >
@@ -619,7 +619,7 @@ const handleQuestionUpdated = (
                 </span>
               </div>
 
-              <div class="space-y-1.5">
+              <div class="space-y-1">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300 block"
                   >Imagen</label
                 >
@@ -653,7 +653,7 @@ const handleQuestionUpdated = (
                     </button>
                   </div>
 
-                  <div class="flex-1 space-y-2">
+                  <div class="flex-1 space-y-1">
                     <label
                       class="flex items-center justify-center px-3 py-2 bg-emerald-50 dark:bg-emerald-600/10 hover:bg-emerald-100 dark:hover:bg-emerald-600/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 rounded-xl text-xs font-semibold cursor-pointer transition-all shadow-sm"
                     >
@@ -677,7 +677,7 @@ const handleQuestionUpdated = (
               </div>
             </div>
 
-            <div class="space-y-1.5">
+            <div class="space-y-1">
               <label class="text-xs font-semibold text-slate-700 dark:text-slate-300"
                 >Descripción Larga</label
               >
@@ -700,7 +700,7 @@ const handleQuestionUpdated = (
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-[3fr_5fr] gap-4">
-              <div class="space-y-1.5">
+              <div class="space-y-1">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300">Slug</label>
                 <input
                   type="text"
@@ -713,13 +713,13 @@ const handleQuestionUpdated = (
                   {{ errors.slug }}
                 </span>
               </div>
-              <div class="space-y-1.5">
+              <div class="space-y-1">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300"
-                  >URL Video</label
+                  >Iframe Video</label
                 >
-                <input
-                  type="text"
+                <textarea
                   v-model="video"
+                  rows="3"
                   placeholder="Ej. https://youtube.com/..."
                   class="w-full bg-slate-50 dark:bg-[#111827] border border-slate-300 dark:border-slate-700/60 rounded-xl px-3.5 py-2 text-xs text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition shadow-sm"
                 />
@@ -744,7 +744,7 @@ const handleQuestionUpdated = (
 
               <div class="grid grid-cols-1 lg:grid-cols-[3fr_5fr] gap-4">
                 <div class="space-y-4">
-                  <div class="space-y-1.5">
+                  <div class="space-y-1">
                     <label class="text-xs font-semibold text-slate-700 dark:text-slate-300"
                       >Titulo Riesgo</label
                     >
@@ -784,7 +784,7 @@ const handleQuestionUpdated = (
                         />
                       </div>
 
-                      <div class="space-y-1.5 flex flex-col items-center">
+                      <div class="space-y-1 flex flex-col items-center">
                         <span class="text-[10px] font-semibold text-slate-500 dark:text-slate-400"
                           >Vista previa</span
                         >
@@ -838,7 +838,7 @@ const handleQuestionUpdated = (
                   </div>
                 </div>
 
-                <div class="space-y-1.5">
+                <div class="space-y-1">
                   <label class="text-xs font-semibold text-slate-700 dark:text-slate-300"
                     >Descripción Riesgo</label
                   >

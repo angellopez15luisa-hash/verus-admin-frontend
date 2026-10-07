@@ -132,10 +132,10 @@ const disabled = computed(() => isLoading.value || !meta.value.valid)
 </script>
 
 <template>
+  <!-- @click.stop="closeModal" -->
   <div
     v-if="isOpen"
     @keydown.escape.stop.prevent="closeModal"
-    @click.stop="closeModal"
     class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/70 backdrop-blur-sm p-4"
   >
     <div
