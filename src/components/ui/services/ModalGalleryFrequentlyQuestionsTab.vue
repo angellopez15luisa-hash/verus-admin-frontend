@@ -60,7 +60,6 @@ watch(
         },
       })
     }
-
     await nextTick()
     questionInputRef.value?.focus()
   },

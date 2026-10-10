@@ -580,7 +580,7 @@ const handleQuestionUpdated = (
 
               <div class="space-y-1">
                 <label class="text-xs font-semibold text-slate-700 dark:text-slate-300"
-                  >Texto corto</label
+                  >Subtitulo</label
                 >
                 <!-- <input
                   type="text"
